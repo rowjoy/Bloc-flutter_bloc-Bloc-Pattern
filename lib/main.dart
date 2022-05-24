@@ -62,7 +62,7 @@ class MyHomePage extends StatelessWidget {
         children: [
           FloatingActionButton(
             onPressed:(){
-              counterState.increment();
+              counterState.increment(CounterRoad.increment);
             },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
@@ -70,7 +70,7 @@ class MyHomePage extends StatelessWidget {
           const SizedBox(height: 16,),
           FloatingActionButton(
             onPressed:(){
-              counterState.decrement();
+              counterState.increment(CounterRoad.decrement);
             },
             tooltip: 'Increment',
             child: const Icon(Icons.remove),
